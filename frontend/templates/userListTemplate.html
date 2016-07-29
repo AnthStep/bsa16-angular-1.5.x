@@ -1,0 +1,20 @@
+<table class="table" align="center">
+	<tr>
+		<td>Name</td>
+		<td>Surname</td>
+		<td>Email</td>
+		<td> </td>
+		<td> </td>
+	</tr>
+	
+	<tr ng-repeat='n in data track by $index'>
+
+	<td>{{n.firstName}}</td>
+	<td>{{n.secondName}}</td>
+	<td>{{n.email}}</td>
+	<td><button type="button" class="btn btn-info" ng-click='changeMod($index)'><span class="glyphicon glyphicon-pencil"></span></button></td>
+	<td><button type="button" class="btn btn-danger" ng-click='Remove($index)'><span class="glyphicon glyphicon-remove"></span></button></td>
+
+	</tr>
+
+</table>
